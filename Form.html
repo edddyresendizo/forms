@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIZZA</title>
+</head>
+<body>
+   <h1>PIZZERIA DEV.F</h1> 
+   <P>Hola, bienvenido a nuestra Pizzería</P>
+   <h2>Llena el siguiente formulario para realizar tu pedido</h2>
+   <form>
+    <br>
+    <input
+        type="text"
+        name="nombre"
+        placeholder="Nombre de clientes"
+        maxlength="10"
+        minlength="2"
+        required
+    />
+    <br>
+    <label>
+        Email
+        <input 
+            type="text"
+            placeholder="Ingresa tu email"
+            name="Email"
+            maxlength="20"
+            minlength="5"
+            required
+        />
+    </label>
+    <label>
+        Dirección
+        <input 
+            type="text"
+            placeholder="Ingresa tu dirección"
+            name="Direcciones"
+            maxlength="30"
+            minlength="5"
+            required
+        />
+    </label>
+    <label> Hora de entrega esperada:
+    <input
+    type="time"
+            name="hora_de_entrega"
+            required
+        >
+        </label>
+        <br>
+        <select name="Tipo_de_pizza">
+            <option value="" selected hidden disabled >Selecciona la opción</option>
+            <option value="Pizza Napolitana">Pizza Napolitana</option>
+            <option value="Pizza de Pepperoni">Pizza de Pepperoni</option>
+            <option value="Pizza Vegana">Pizza Vegana</option>
+            <option value="Piza de 4 quesos">Pizza de 4 quesos</option>
+        </select>
+        <br>
+        <button type="submit">Enviar información</button>
+        <button type="reset">Borrar información</button>
+     </form>
+</body>
+</html>
